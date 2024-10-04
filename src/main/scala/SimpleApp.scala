@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 object SimpleApp {
   def main(args: Array[String]): Unit = {
     var logFile = "/home/merlin/Downloads/spark-3.5.3-bin-hadoop3"
-    val spark = SparkSession.builder
+    val spark = SparkSession.builder()
       .master("local")
       .appName("Simple Application")
       .getOrCreate()
